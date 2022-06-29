@@ -1,4 +1,4 @@
-import random as rand, math, numpy as np, matplotlib.pyplot as plt, csv
+import random as rand, math, matplotlib.pyplot as plt, csv
 from point import Point
 
 class KMeans:
