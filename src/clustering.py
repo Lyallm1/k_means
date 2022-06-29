@@ -123,11 +123,9 @@ class KMeans:
                 self.print_means(means)
                 print("update mean:")
             stop = self.update_means(means, 0.01)
-            if not stop:
-                self.means = []
-                self.means = means
+            if not stop: self.means = means
             iterations += 1
-        print("K-Means is completed in {} iterations. Check outputs.csv for clustering results!".format(iterations))
+        print(f"K-Means is completed in {iterations} iterations. Check outputs.csv for clustering results!")
         self.clusters = clusters
         if plot_flag:
             fig = plt.figure()
